@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+html(lang="pt-br")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="node_modules/bootstrap/compiler/bootstrap.css")
+        link(rel="stylesheet", href="node_modules/bootstrap/compiler/style.css")       
+        
+        title Viagens Corp
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            .container
+                a.navbar-brand(href="#") Logo
+                button.navbar-toggler(type="button", data-toggle="collapse" data-target="#navbarSite")
+                    span.navbar-toggler-icon
+                .collapse.navbar-collapse#navbarSite
+                    ul.navbar-nav.mr-auto
+                        li.nav-item
+                            a.nav-link(href="#") Link1
+                        li.nav-item
+                            a.nav-link(href="#  ") Link2
+                        li.nav-item
+                            a.nav-link(href="#") Link3
+                    .dropdown
+                        ul.navbar-nav
+                            li.dropdown
+                                a.nav-link.dropdown-toggle(href="#", data-toggle="dropdown")#navDrop Social
+                                .dropdown-menu
+                                    a.dropdown-item(href="#") Facebook
+                                    a.dropdown-item(href="#") Twitter
+                                    a.dropdown-item(href="#") Instagram
+        #carouselHead.carousel.slide(data-ride="carousel")
+            .carousel-inner
+                .carousel-item.active
+                    img(src="imgs/img1.jpg", alt="slide1").img-fluid.d-block
+                .carousel-item
+                    img(src="imgs/img2.jpg", alt="slide2").img-fluid.d-block
+            a.carousel-control-prev(href="#carouselHead", role="button" data-slide="prev")
+                span.carousel-control-prev-icon
+            a.carousel-control-next(href="#carouselHead", role="button" data-slide="next")
+                span.carousel-control-next-icon
+        .row
+            .col-12
+                h1.display-3.text-center.mt-3 Explore novos Horizontes
+        .container
+            .row.pt-3
+                    .col-4
+                        nav.navbar.bg-dark.navbar-dark
+                            nav.nav-pills.flex-column
+                                a.nav-link.active(href="#secao1") Item1
+                                a.nav-link(href="#secao2") Item2                            
+                                a.nav-link(href="#secao3") Item3           
+                                a.nav-link(href="#secao4") Item4         
+                                a.nav-link(href="#secao4") Item5         
+                                a.nav-link(href="#secao4") Item6         
+                                a.nav-link(href="#secao4") Item7
+                                a.nav-link(href="#secao4") Item8      
+
+                    .col-8
+                        .scrollSpySite(data-spy="scroll", data-target="navbarVertical" data-offset="0")                      
+                            #secao1.container-fluid.bg-success(style="padding-top:70px;padding-bottom:70px")
+                                h1 Titulo
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente minima ad eos quaerat aliquid
+                            #secao2.container-fluid.bg-warning(style="padding-top:70px;padding-bottom:70px")
+                                h1 Titulo
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente minima ad eos quaerat aliquid
+                            #secao3.container-fluid.bg-danger(style="padding-top:70px;padding-bottom:70px;color:white")
+                                h1 Titulo
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente minima ad eos quaerat. 
+        script(src="node_modules/jquery/dist/jquery.js")  
+        script(src="node_modules/popper.js/dist/umd/popper.js")     
+        script(src="node_modules/bootstrap/dist/js/bootstrap.js")
